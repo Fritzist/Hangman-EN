@@ -8,7 +8,7 @@ public class Main {
         System.out.println("Welcome to Hangman");
 
 
-        File dictionary = new File("C:/Users/Friedrich/IdeaProjects/Hangman/src/english3.txt");
+        File dictionary = new File(""); //put your path in here from the english3.txt file
 
         Scanner scanner = new Scanner(dictionary);
         Scanner input = new Scanner(System.in);
@@ -37,7 +37,7 @@ public class Main {
             String letter = input.next();
 
             while (letter.length() != 1 || Character.isDigit(letter.charAt(0))) {
-                System.out.println("Not a valid input || try again"); // f string and putt l31 in
+                System.out.println("Not a valid input || try again");
                 letter = input.next();
             }
 
